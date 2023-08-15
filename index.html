@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Num-Picker Game</title>
+</head>
+
+<body>
+    <!-- Splash Screen -->
+    <div id="splashScreen" class="splash-screen">
+        <div class="splash-content">
+            <h1>Num-Picker Game</h1>
+            <h4>Welcome to our website!</h4>
+            <ul class="list">
+                <h3>Rules:</h3>
+                <li class="list-item">You have time Limit of 30 seconds.</li>
+                <li class="list-item">There is click value on headbar.</li>
+                <li class="list-item">You have to click that value which is printed on balls.</li>
+                <li class="list-item">If you click on right ball your score will be incresed by 10.</li>
+                <li class="list-item">You are allowed to make 3 mistakes.</li>
+                <li class="list-item">If you make more than three mistakes game will be over.</li>
+            </ul>
+            <button id="closeSplashButton">Get Started</button>
+        </div>
+    </div>
+    <!-- Main game Code -->
+    <div class="game main-content" id="mainContent">
+        <div class="header">
+            <div class="press">
+                Click:
+                <div class="clickval">0</div>
+            </div>
+            <div class="miss">
+                Missed:
+                <div class="missval">0</div>
+            </div>
+            <div class="score">
+                Score:
+                <div class="scval">0</div>
+            </div>
+            <div class="timer">
+                Timer:
+                <div class="timeval">30</div>
+            </div>
+        </div>
+        <div class="gbody"></div>
+        <div class="gover">
+            <h2>Game Over</h2>
+            <h3 class="scr">Your Score:</h3>
+            <a href="index.html"><button>New Game</button></a>
+        </div>
+    </div>
+    <!-- footer code -->
+    <div class="footer">
+        <span>Developed by: Shivshankar Mishra</span>
+        <span>Email: <a href="mailto:shivmishankar@gmail.com">shivmishankar@gmail.com</a></span>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-family: "Barlow", sans-serif;
+  background-color: rgb(71, 193, 71);
+}
+
+.game {
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  background-color: beige;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #3c6c27, -5px -5px 5px #3c6c27;
+}
+
+div > .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 80px;
+  width: 100%;
+  height: 60px;
+  color: aliceblue;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: #3cae0b;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+div.game > div.header > div.press,
+div.game > div.header > div.miss,
+div.game > div.header > div.score,
+div.game > div.header > div.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+div.game > div.header > div.press > .clickval,
+div.game > div.header > div.miss > .missval,
+div.game > div.header > div.score > .scval,
+div.game > div.header > div.timer > .timeval {
+  width: 25px;
+  color: #4eb920;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 5px;
+  background-color: bisque;
+}
+
+div.game > div.header > div.miss > .missval {
+  color: red !important;
+}
+
+div.game > .gbody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: calc(100% - 70px) !important;
+  overflow: hidden !important;
+}
+
+div.game > div.gbody > .bubble {
+  cursor: pointer;
+  margin: 10px;
+  padding: 5px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: monospace;
+  background-color: #3cae0b;
+}
+
+div.game > div.gbody > .bubble:hover {
+  background-color: #257404;
+}
+
+div.gover {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin: 15%;
+  gap: 30px;
+}
+
+div.gover > h2 {
+  font-size: 4em;
+  font-weight: 700;
+  color: rgb(255, 0, 0);
+}
+
+div.gover > h3 {
+  margin: 10px;
+  font-size: 24px;
+  color: #257404;
+}
+
+div.gover > a > button,
+.splash-screen > .splash-content > button#closeSplashButton {
+  width: 130%;
+  height: 40px;
+  color: whitesmoke;
+  background-color: #4eb920;
+  border: 2px solid #4eb920;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+.splash-screen > .splash-content > button#closeSplashButton {
+  cursor: pointer;
+  width: 50%;
+}
+
+div.gover > a > button:hover,
+.splash-screen > .splash-content > button#closeSplashButton:hover {
+  color: #4eb920;
+  background-color: whitesmoke;
+  outline: #4eb920;
+}
+
+.splash-screen {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.splash-screen > .splash-content > h1 {
+  color: #2f1a1a;
+}
+
+.splash-screen > .splash-content > h4 {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  color: #504545;
+}
+
+.splash-screen > .splash-content > ul {
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.splash-screen > .splash-content > ul > li {
+  margin-left: 10px;
+  padding: 2px;
+}
+
+.splash-screen > .splash-content > ul > li::marker {
+  content: "👉";
+}
+
+.main-content {
+  display: none;
+}
+div.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  padding: 0px 10px;
+  width: 100%;
+  height: 30px;
+  bottom: 0px !important;
+  color: white;
+  background-color: #3c6c27;
+}
+.footer>span>a{
+  text-decoration: none;
+  color: white;
+}
+.footer>span>a:hover{
+  text-decoration: none;
+  color: #88cd6a;
+}
