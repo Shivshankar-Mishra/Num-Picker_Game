@@ -11,6 +11,8 @@ closeSplashButton.addEventListener("click", () => {
   splashScreen.style.display = "none";
   mainContent.style.display = "block";
   timer();
+  createBubble();
+  click();
 });
 function click() {
   clk = Math.floor(Math.random() * 10);
@@ -64,5 +66,3 @@ document.querySelector(".gbody").addEventListener("click", function (val) {
     }
   }
 });
-createBubble();
-click();
